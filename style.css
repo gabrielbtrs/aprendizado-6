@@ -1,0 +1,885 @@
+@font-face {
+    font-family:'HankenGrotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+
+    body {
+    
+    }
+    
+    .central {
+        display: flex;
+        flex-direction: column;
+        background-color: 
+        rgb(255, 255, 255);
+        height: 100vh;
+        
+        
+    }
+    
+    .box2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translate(0, -3rem);
+        width: 375px;
+        height: 450px;
+        border-radius: 3rem;
+        background-image: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    }
+
+    .result {
+        color: rgba(255, 255, 255, 0.719);
+        font-family:'HankenGrotesk';
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 70px;
+    }
+
+    .divcircle {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        border-radius: 5rem;
+        background-image: linear-gradient(to bottom,hsl(241, 81%, 54%),  hsla(252, 100%, 67%, 0.623) );
+    }
+
+    .numberstatic {
+        color: rgb(255, 255, 255);
+        font-size: 65px;
+        transform: translate(1.5rem, 1.5rem);
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .percent {
+        transform: translate(-2.4rem, 6rem);
+        font-size: 16px;
+        font-family:'HankenGrotesk';
+        color: rgba(255, 255, 255, 0.541);
+    }
+
+    .great {
+        margin-top: 15px;
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        font-family:'HankenGrotesk';
+    }  
+    
+    .info {
+        color: rgba(255, 255, 255, 0.658);
+        text-align: center;
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin: 10px 20px 0px 10px;
+        font-family:'HankenGrotesk';
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 375px;
+        height: 475px;
+        background-color: rgba(255, 255, 255, 0.342);
+    } 
+
+    section {
+        align-items: center;
+    }
+
+    .summary {
+        display: flex;
+        align-self: self-start;
+        margin-left: 25px;
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        font-size: 25px;
+        transform: translate(0,-0.8rem);
+    }
+
+    .reactionbox {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        height: 50px;
+        border-radius: 0.5rem;
+        background-color: hsla(0, 100%, 67%, 0.288);
+    }
+
+    .reactionbox svg {
+        width: 25px;
+    }
+
+    .reaction {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color: hsl(0, 100%, 67%);
+    }
+
+    .icon-text1 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .statics1 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static1 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static2 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .memorybox {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        height: 50px;
+        background-color: hsla(39, 100%, 56%, 0.288);
+        
+        margin-bottom: 25px;
+        border-radius: 0.5rem;
+    }
+
+    .memorybox svg {
+        width: 25px;
+    }
+
+    .icon-text2 {
+        margin-left: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .memory {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color: hsl(39, 100%, 56%);
+    }
+
+    .statics2 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static3{
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static4{
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .verbalbox {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-bottom: 25px;
+        background-color:  hsla(166, 100%, 37%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .verbalbox svg {
+        width: 25px;
+    }
+
+    .icon-text3 {
+        margin-left: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .verbal {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color:  hsl(166, 100%, 37%);
+    }
+
+    .statics3 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static5 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static6 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .visualbox {
+        display: flex;
+        width: 320px;
+        height: 50px;
+        justify-content: space-between;
+        background-color: hsla(234, 85%, 45%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .visualbox svg {
+        width: 25px;
+    }
+
+    .icon-text4 {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .visual {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color:  hsl(234, 85%, 45%);
+    }
+
+    .statics4 {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .static7 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static8 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .continue {
+        display: flex;
+        width: 330px;
+        height: 50px;
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-cont {
+        font-family:'HankenGrotesk';
+        color: white;
+
+    }
+}
+
+@media (min-width: 376px) and (max-width: 659px) {
+
+    .central {
+        display: flex;
+        flex-direction: column;
+        background-color: 
+        rgb(255, 255, 255);
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .box2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translate(0, -3rem);
+        width: auto;
+        height: 450px;
+        border-radius: 3rem;
+        background-image: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    }
+
+    .result {
+        color: rgba(255, 255, 255, 0.719);
+        font-family:'HankenGrotesk';
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 70px;
+    }
+
+    .divcircle {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        border-radius: 5rem;
+        background-image: linear-gradient(to bottom,hsl(241, 81%, 54%),  hsla(252, 100%, 67%, 0.623) );
+    }
+
+    .numberstatic {
+        color: rgb(255, 255, 255);
+        font-size: 65px;
+        transform: translate(1.5rem, 1.5rem);
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .percent {
+        transform: translate(-2.4rem, 6rem);
+        font-size: 16px;
+        font-family:'HankenGrotesk';
+        color: rgba(255, 255, 255, 0.541);
+    }
+
+    .great {
+        margin-top: 15px;
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        font-family:'HankenGrotesk';
+    }  
+    
+    .info {
+        color: rgba(255, 255, 255, 0.658);
+        text-align: center;
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin: 10px 20px 0px 10px;
+        font-family:'HankenGrotesk';
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: auto;
+        height: 475px;
+        background-color: rgba(255, 255, 255, 0.342);
+    } 
+
+    section {
+        align-items: center;
+    }
+
+    .summary {
+        display: flex;
+        align-self: center;
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        font-size: 25px;
+        transform: translate(0,-0.8rem);
+    }
+
+    .reactionbox {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        height: 50px;
+        border-radius: 0.5rem;
+        background-color: hsla(0, 100%, 67%, 0.288);
+    }
+
+    .reactionbox svg {
+        width: 25px;
+    }
+
+    .reaction {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color: hsl(0, 100%, 67%);
+    }
+
+    .icon-text1 {
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .statics1 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static1 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static2 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .memorybox {
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+        height: 50px;
+        background-color: hsla(39, 100%, 56%, 0.288);
+        margin-bottom: 25px;
+        border-radius: 0.5rem;
+    }
+
+    .memorybox svg {
+        width: 25px;
+    }
+
+    .icon-text2 {
+        margin-left: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .memory {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color: hsl(39, 100%, 56%);
+    }
+
+    .statics2 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static3{
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static4{
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .verbalbox {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin-bottom: 25px;
+        background-color:  hsla(166, 100%, 37%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .verbalbox svg {
+        width: 25px;
+    }
+
+    .icon-text3 {
+        margin-left: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .verbal {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color:  hsl(166, 100%, 37%);
+    }
+
+    .statics3 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static5 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static6 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .visualbox {
+        display: flex;
+        width: 320px;
+        height: 50px;
+        justify-content: space-between;
+        background-color: hsla(234, 85%, 45%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .visualbox svg {
+        width: 25px;
+    }
+
+    .icon-text4 {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .visual {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color:  hsl(234, 85%, 45%);
+    }
+
+    .statics4 {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .static7 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static8 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .continue {
+        display: flex;
+        width: 330px;
+        height: 50px;
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-cont {
+        font-family:'HankenGrotesk';
+        color: white;    
+    }
+}
+
+@media (min-width: 659px) {
+
+    body {
+        background-color: rgba(236, 236, 236, 0.986);
+    }
+
+    .central {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box2 {
+        width: 300px;
+        height: 450px;
+        background-image: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+        border-radius: 2rem;
+        transform: translate(3rem);
+    }
+
+    .result {
+        font-family:'HankenGrotesk';
+        color: rgb(255, 255, 255); 
+        font-weight: 500;
+        justify-self: center;
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .divcircle {
+        display: flex;
+        justify-self: center;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        background-image: linear-gradient(to bottom,hsl(241, 81%, 54%),  hsla(252, 100%, 67%, 0.623) );
+        border-radius: 5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .numberstatic {
+        color: rgb(255, 255, 255);
+        font-size: 65px;
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .percent {
+        transform: translate(0, -0.8rem);
+        font-size: 16px;
+        font-family:'HankenGrotesk';
+        color: rgba(255, 255, 255, 0.541);
+    }
+
+    .great {
+        justify-self: center;
+        font-size: 16px;
+        font-family:'HankenGrotesk';
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 25px;
+
+    }
+
+    .info {
+        text-align: center;
+        font-size: 16px;
+        flex-wrap: wrap;
+        font-family:'HankenGrotesk';
+        color: white;
+        margin: 10px 40px 0px 40px;
+
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 360px;
+        height: 450px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2rem;
+    }
+
+    section {
+        align-items: center;
+    }
+
+    .summary {
+        display: flex;
+        align-self: self-start;
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        font-size: 25px;
+        transform: translate(4rem,2rem);
+    }
+
+    .reactionbox {
+        display: flex;
+        width: 290px;
+        margin-left: 3rem;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: 50px;
+        border-radius: 0.5rem;
+        background-color: hsla(0, 100%, 67%, 0.288);
+    }
+
+    .reactionbox svg {
+        width: 25px;
+    }
+
+    .reaction {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color: hsl(0, 100%, 67%);
+    }
+
+    .icon-text1 {
+        display: flex;
+        margin-left: 10px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .statics1 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static1 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static2 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .memorybox {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        margin-bottom: 15px;
+        margin-left: 3rem;
+        height: 50px;
+        background-color: hsla(39, 100%, 56%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .memorybox svg {
+        width: 25px;
+    }
+
+    .icon-text2 {
+        margin-left: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .memory {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color: hsl(39, 100%, 56%);
+    }
+
+    .statics2 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static3{
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static4{
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .verbalbox {
+        width: 290px;
+        margin-bottom: 15px;
+        margin-left: 3rem;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        background-color:  hsla(166, 100%, 37%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .verbalbox svg {
+        width: 25px;
+    }
+
+    .icon-text3 {
+        margin-left: 10px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .verbal {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color:  hsl(166, 100%, 37%);
+    }
+
+    .statics3 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .static5 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static6 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .visualbox {
+        display: flex;
+        width: 290px;
+        height: 50px;
+        margin-left: 3rem;
+        justify-content: space-between;
+        background-color: hsla(234, 85%, 45%, 0.288);
+        border-radius: 0.5rem;
+    }
+
+    .visualbox svg {
+        width: 25px;
+    }
+
+    .icon-text4 {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .visual {
+        font-family:'HankenGrotesk';
+        font-weight: 600;
+        color:  hsl(234, 85%, 45%);
+    }
+
+    .statics4 {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .static7 {
+        font-weight: 700;
+        font-family:'HankenGrotesk';
+    }
+
+    .static8 {
+        color: rgba(0, 0, 0, 0.377);
+        font-family:'HankenGrotesk';
+    }
+
+    .continue {
+        display: flex;
+        width: 250px;
+        height: 50px;
+        margin-left: 3rem;
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-cont {
+        font-family:'HankenGrotesk';
+        color: white;    
+    }
+
+
+}
